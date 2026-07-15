@@ -9,6 +9,18 @@ Repositório com os projetos desenvolvidos durante o nanodegree **[Intro to Mach
 | 1 | [Finding Donors for CharityML](project_1/) | Previsão de renda com dados do censo americano para identificar potenciais doadores | Aprendizado supervisionado |
 | 2 | [CIFAR-10 Image Classifier](project_2/CIFAR-10_Image_Classifier-STARTER.ipynb) | Classificação de imagens em dez categorias do conjunto CIFAR-10 | CNN, data augmentation, batch normalization e dropout |
 
+## Project 1 — Finding Donors for CharityML
+
+O primeiro projeto utiliza dados do censo americano para identificar pessoas com renda superior a US$ 50 mil e, consequentemente, potenciais doadores. Foram comparados `BaggingClassifier`, `RandomForestClassifier` e `AdaBoostClassifier`, sendo o AdaBoost selecionado e otimizado com `GridSearchCV`.
+
+O modelo otimizado alcançou **85,28% de acurácia** e **F-score de 0,7164**, superando significativamente o preditor ingênuo, que obteve 24,78% de acurácia e F-score de 0,2917.
+
+### Artefatos
+
+- [Notebook completo](project_1/finding_donors.ipynb)
+- [Descrição e instruções](project_1/README.md)
+- [Dataset](project_1/census.csv)
+
 ## Project 2 — CIFAR-10 Image Classifier
 
 O segundo projeto implementa uma rede neural convolucional em PyTorch para classificar as dez categorias do CIFAR-10. O modelo utiliza três blocos convolucionais com 32, 64 e 128 canais, seguidos por uma camada totalmente conectada e uma saída `Softmax` com dez probabilidades.
